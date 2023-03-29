@@ -28,18 +28,18 @@ public class OnlineCoursesAnalyzer {
                         Double.parseDouble(info[21]), Double.parseDouble(info[22]));
                 courses.add(course);
             }
-        } catch (IOException e) {
-            e.printStackTrace();
-        } finally {
-            if (br != null) {
+    } catch (IOException e) {
+        e.printStackTrace();
+    } finally {
+        if (br != null) {
                 try {
                     br.close();
-                } catch (IOException e) {
+        } catch (IOException e) {
                     e.printStackTrace();
-                }
-            }
         }
+            }
     }
+  }
 
     //1
     public Map<String, Integer> getPtcpCountByInst() {
